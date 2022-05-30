@@ -1,0 +1,49 @@
+{% extends 'layouts/default.html' %}
+{% block body %}
+<center><h1 style="margin-top: 80px; color:black"><strong>Contact Us</strong></h1></center>
+<div class="container">
+        <div style="margin-left: 150px" class="row">
+            <div class="col-lg-6 ">
+                <div class="card">
+                    <div class="face front-face"style="background-color: deepskyblue">
+                        <img src="{{ url_for('static', filename='imgs/aymen.jpg') }}"
+                            alt="" class="profile">
+                        <div class="pt-3 text-uppercase name" style="color: black">
+                            Aymen Jlassi
+                        </div>
+                        <div class="designation" style="color: black">Web Developer</div>
+                    </div>
+                    <div class="face back-face" style="background-color: deepskyblue">
+                        <span class="fas fa-quote-left"></span>
+                        <div class="testimonial" style="color: black">
+                            Email : aymen.jlassi@sesame.com.tn
+                             phone : 197
+                        </div>
+                        <span class="fas fa-quote-right"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="face front-face" style="background-color: deepskyblue">
+                        <img src="{{ url_for('static', filename='imgs/anas.jpg') }}"
+                            alt="" class="profile">
+                        <div class="pt-3 text-uppercase name" style="color: black">
+                            Anas Gara
+                        </div>
+                        <div class="designation" style="color: black">Mobile developer</div>
+                    </div>
+                    <div class="face back-face" style="background-color: deepskyblue">
+                        <span class="fas fa-quote-left"></span>
+                        <div class="testimonial" style="color: black">
+                           Email : anas.gara@sesame.com.tn
+                            phone : 193
+                        </div>
+                        <span class="fas fa-quote-right"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
